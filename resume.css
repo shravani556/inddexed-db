@@ -1,0 +1,15 @@
+.mainDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.leftDiv{
+  width: 30;
+  background: yellow;
+  
+
+}
+.rigthDiv{
+  width: 68%;
+  background: green;
+
+}

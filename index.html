@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="fevicol/manifest.json">
+  </head>
+  <body>
+  <form class=""  >
+<!-- name:<input type="text" name="name" value="" id="name"><br>
+rollno:<input type="text" name="rollno" value="" id="rollno"><br>
+mailid:<input type="text" name="email" value="" id="email"><br>
+mobileno:<input type="text" name="email" value="" id="mobileno"><br>
+career objective: <br><textarea name="career objective" rows="5" cols="30">
+to enhance my skills yet furthur with your reputated organisation
+</textarea><br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other <br>
+  <select name="qualification">
+    <option value="qualification">qualification</option>
+  <option value="btech">btech</option>
+  <option value="be">B.E</option>
+  <option value="pg">p.g</option>
+  <option value="ug">u.g</option>
+</select><br>
+<select name="branch">
+  <option value="branch">branch</option>
+<option value="cse">cse</option>
+<option value="ece">ece</option>
+<option value="eee">eee</option>
+<option value="civil">civil</option>
+</select><br>
+technical skills:<br>
+<textarea name="technical skills" rows="10" cols="20">
+1.programming languages:c,c++,java,oracle
+2.ms-office
+3.certification courses
+</textarea> <br>
+educational details:<br>
+<textarea name="educational qualifications" rows="10" cols="20">
+1.btech:svit:ananthapur:80%;
+2.intermediate:narayana jr college:94%:ananthapur
+3.ssc:ratnam school:nellore:9.5;
+</textarea> <br>
+adress :<br>
+<textarea name="adress" rows="3" cols="20">
+7-581A rahmathnagar
+ananthapur
+</textarea> <br>
+<button type="button" name="button" onclick="getDetails()">SUBMIT</button> -->
+<div class="mainDiv">
+    <h2>Personel Details:</h2>
+<div class="pDiv">
+  name:<input type="text" name="name" value="" id="name" placeholder="enter name" id="name">
+  rollno:<input type="text" name="rollno" value="" id="rollno" placeholder="enter rollno" id="rollno">
+  mailid:<input type="text" name="email" value="" id="email" placeholder="enter mail" id="mailid">
+  mobileno:<input type="text" name="email" value="" id="mobileno" placeholder="enter mobileno" id="mobileno"><br>
+</div>
+<h2>career objective:</h2>
+<select class="co" name="co" placeholder="career objective" id="career">
+<option value="co">career objective </option>
+<option value="">enhance skills</option>
+<option value="">to improve financially</option>
+<option value="">improve communication</option>
+<option value="">to get promotion</option> <br>
+</select>
+<h2>Educational Details</h2>
+ <div class="eduDiv">
+  <div class="sscDiv">
+    <select class="ssc" name="ssc" id="sscValue">
+      <option value="sscboard" >sscboard</option>
+      <option value="cbse" >cbse</option>
+      <option value="ssc" >ssc</option>
+    </select><br>
+        <input type="radio" name="cgpa" value="cgpa" id="sscmks">cgpa
+        <input type="radio" name="cgpa" value="percentage" id="sscmks1">percentage <br>
+        percentage/cgpa:<input type="text" name="percentage" value="" placeholder="percentage/cgpa" id="per"><br>
+        year of pass:<input type="text" name="yop" value="" placeholder="yop" id="yop">
+
+  </div>
+  <div class="interDiv">
+    <select class="inter" name="inter" id="interValue">
+      <option value="interboard">interboard</option>
+      <option value="cbse">cbse</option>
+      <option value="inter">inter</option>
+    </select><br>
+    <input type="radio" name="intercgpa" value="cgpa" id="intermks">cgpa
+    <input type="radio" name="intercgpa" value="percentage" id="intermks1">percentage <br>
+        percentage/cgpa:<input type="text" name="percentage" value="" placeholder="percentage/cgpa" id="interper"><br>
+        year of pass:<input type="text" name="yop" value="" placeholder="" id="interyop">
+
+  </div>
+  <div class="btechDiv">
+      <input type="radio" name="btech" value="btech" id="btechValue">btech
+    <input type="radio" name="btech" value="diploma" id="diplomaValue">diploma <br>
+    <select class="btech" name="btech" id="bValue">
+      <option value="branch">branch</option>
+      <option value="cse">cse</option>
+      <option value="ece">ece</option>
+      <option value="civil">civil</option>
+      <option value="mechanical">mechanical</option>
+    </select><br>
+    <input type="radio" name="bcgpa" value="cgpa" id="bmks">cgpa
+    <input type="radio" name="bcgpa" value="percentage" id="bmks1">percentage <br>
+    percentage/cgpa:<input type="text" name="" value="" placeholder="percentage/cgpa" id="bper"><br>
+    year of pass:<input type="text" name="" value="" placeholder="yop" id="byop">
+
+  </div>
+
+</div>
+</div><br>
+<center><button type="button" name="button" onclick="getDetails()">SUBMIT</button>
+  </form>
+  </body>
+  <script type="text/javascript" src="index.js">
+
+  </script>
+  <script type="text/javascript">
+    if('serviceWorker' in navigator) {
+navigator.serviceWorker.register("sw.js");
+console.log("serviceWorker registered successfully..");
+    }
+    err=>{
+      console.log("error occured in sw");
+    }
+  </script>
+</html>
